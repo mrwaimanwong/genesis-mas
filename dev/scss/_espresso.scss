@@ -1,0 +1,378 @@
+/* ## Variables
+-----------------------------------------------*/
+/*
+Theme Name:     MAS
+Description: 	Material Aquisition Services
+Theme URI:      http://waimanwong.com
+Author:			Wai Man Wong Design
+Author URI: 	http://waimanwong.com
+Template:       espresso
+Version:        0.1
+License: GNU General Public License
+License URI: license.txt
+Tags: red, green, black, blue, white, two-columns, fixed-width, custom-header, custom-background, threaded-comments, sticky-post, translation-ready, microformats, rtl-language-support, editor-style, custom-menu
+
+http://www.colourlovers.com/palette/12611/professional-1
+http://www.colourlovers.com/palette/5991/is_that_legal_yes.
+*/
+/* @font-face kit by Fonts2u (http://www.fonts2u.com) */
+// @import url("../espresso/style.css");
+@font-face {
+	font-family:"Oswald";
+	src:url("../fonts/Oswald.eot?")
+		format("eot"),
+		url("../fonts/Oswald.woff") format("woff"),
+		url("../fonts/Oswald.ttf") format("truetype"),
+		url("../fonts/Oswald.svg#Oswald") format("svg");
+	font-weight:normal;font-style:normal;
+}
+
+body{
+	color: #333333;
+	font-size: 14px;
+	line-height: 2em;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: Oswald;
+	font-weight: normal;
+}
+
+
+#header{
+	background: url('../images/header_bg.png') top left repeat-x ;
+}
+.header_wrap_outer {
+padding: 0;
+}
+#site-title{
+		margin: 0;
+}
+#site-title a{
+	display: block;
+	background: url('../images/MAS_logo.png') top left no-repeat;
+	text-indent: -9999px;
+	width: 150px;
+	height: 115px;
+
+}
+
+.sf-menu li{float:left;position:relative;}
+
+/*** Espresso SKIN MENU AREA's***/
+
+.espresso-menu li:hover ul,
+.espresso-menu li.sfHover ul{
+	left:0;
+	top: 40px;/* match top ul list item height */
+	z-index:99;
+}
+/*** SKIN MENU AREA's ***/
+.espresso-menu{background: transparent; padding-top: 70px; float: right;}
+.espresso-menu a{ font-size:13px;line-height:15px;padding: 13px 12px 12px;text-decoration:none;  }
+
+.espresso-menu a,
+.espresso-menu a:visited{/* visited pseudo selector so IE6 applies text colour*/
+	color:#FFF;
+}
+.espresso-menu a:hover{
+		color:#999;
+}
+.espresso-menu li,
+.espresso-menu li li,
+.espresso-menu li li li{ background: transparent; }
+
+.espresso-menu .li-level-1{
+	background: #5a5a5a url('../images/nav_off.png') top left repeat-x;
+	margin-left: 5px;
+	box-shadow: 0 0px 5px #232323;
+	font-family: 'Oswald';
+	border: solid 1px #888888;
+	border-bottom: 0;
+}
+.espresso-menu .a-level-1,
+.espresso-menu .a-level-1:visited{
+	color:#fff;
+	font-size:16px;
+	text-shadow: 0 -1px 2px #000;
+	text-transform:uppercase;
+}
+.espresso-menu .a-level-1:hover{
+	color:#fff;
+}
+
+/* HOVER */
+.espresso-menu li.li-level-1:hover,
+.espresso-menu li.sfHover.li-level-1{
+	background: #026cb6 url('../images/nav_on.png') top left repeat-x;outline:0;
+	border: solid 1px #026cb6;
+	border-bottom: 0;
+}
+.espresso-menu li:hover,
+.espresso-menu li.sfHover{ background: transparent; }
+.espresso-menu li:hover .a-level-1,
+.espresso-menu li.sfHover .a-level-1{ color:#fff;  }
+/* ON LI */
+.espresso-menu .li-level-1.current-post-ancestor,
+.espresso-menu .li-level-1.current_page_parent,
+.espresso-menu .li-level-1.current,
+.espresso-menu .li-level-1.current-cat,
+.espresso-menu .li-level-1.current_page_item{}
+
+.espresso-menu .li-level-1.current-menu-item,
+.espresso-menu .li-level-1.current-menu-ancestor{color: #fff;background: #026cb6 url('../images/nav_on.png') top left repeat-x;outline:0;
+border: solid 1px #026cb6; border-bottom: 0;}
+
+.espresso-menu .li-level-1.current-menu-item .a-level-1,
+.espresso-menu .li-level-1.current-menu-ancestor .a-level-1{ color: #fff; }
+
+.espresso-menu .sub-menu{
+	background: #002743;
+}
+
+.espresso-menu .sub-menu.ul-level-2{
+
+}
+
+.hr{
+	padding: 5px 0;
+}
+
+#email a, #phone{
+	font-family: Oswald;
+	color: #026cb6;
+	font-size: 28px;
+	line-height: 35px;
+	font-style: normal;
+	font-weight: normal;
+}
+#email{
+	padding: 0;
+}
+#email a{
+	padding: 0 0 0 40px;
+
+	background: transparent url('../images/mail.png') left center no-repeat;
+}
+#phone{
+	padding: 0 0 0 40px;
+	float: right;
+	background: transparent url('../images/phone.png') left center no-repeat;
+}
+#footer-links{
+	padding: 0 0 10px 0;
+}
+
+.button_default:hover{color:#F0F8FF;background:#0068b1;}
+.button_default{color:#F0F8FF; background:#026cb6; box-shadow:none; text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.5); border-color: #3589c5; line-height: 1.5em;}
+.button_medium{ font-family: Oswald; text-transform: uppercase; font-size: 14px;
+	-webkit-border-radius:10px;-moz-border-radius:10px;border-radius:10px; padding: .5em 1em;
+	}
+
+.icon_box h4{
+	font-family: 'Oswald';
+	text-transform: uppercase;
+	color: #333333;
+	font-size: 29px;
+	font-weight: normal;
+	line-height: 45px;
+	border-bottom: solid 1px #b7b7b7;
+}
+.box_gear h4{
+	padding-left: 40px;
+	background: transparent url('../images/gear.png') left center no-repeat;
+}
+.box_chair h4{
+	padding-left: 40px;
+	background: transparent url('../images/chair.png') left center no-repeat;
+}
+.box_box h4{
+	padding-left: 40px;
+	background: transparent url('../images/box.png') left center no-repeat;
+}
+.box_shield h4{
+	padding-left: 40px;
+	background: transparent url('../images/shield.png') left center no-repeat;
+}
+.box_globe h4{
+	padding-left: 40px;
+	background: transparent url('../images/globe.png') left center no-repeat;
+}
+
+.box_calendar h4{
+	padding-left: 40px;
+	background: transparent url('../images/calendar.png') left center no-repeat;
+}
+
+.num_box h4{
+	font-family: Oswald;
+	color: #026cb6;
+	font-size: 16px;
+	font-weight: normal;
+}
+.num_box {
+	padding-left: 40px;
+}
+.box_one{
+		background: transparent url('../images/one.png') 0px 3px no-repeat;
+	}
+	.box_two{
+			background: transparent url('../images/two.png') 0px 3px no-repeat;
+		}
+		.box_three{
+				background: transparent url('../images/three.png') 0px 3px no-repeat;
+			}
+
+.mini_header_bg{
+	height: 75px;
+}
+#mini-header .contact{
+	background: url('../images/contact_bg.jpg') top left no-repeat;
+}
+#mini-header .careers{
+	background: url('../images/careers_bg.jpg') top left no-repeat;
+}
+#mini-header .products{
+	background: url('../images/products_bg.jpg') top left no-repeat;
+}
+#mini-header .company{
+	background: url('../images/company_bg.jpg') top left no-repeat;
+}
+#mini-header .services{
+	background: url('../images/services_bg.jpg') top left no-repeat;
+}
+#mini-header .events{
+	background: url('../images/events_bg.jpg') top left no-repeat;
+}
+#mini-header{
+	background: #026cb6 url('../images/mini_bg.jpg') top left repeat-x;
+
+	height: 75px;
+	margin-bottom: 30px;
+}
+#home-header{
+	background: #026cb6 url('../images/MAS_home_2.jpg') top left repeat-x;
+display: block;
+	height: 295px;
+	margin-bottom: 20px;
+}
+// .header-slider-content{position: relative;}
+// .hpslideshow { height: 295px; width: 940px; position: absolute;}
+// .hpslideshow img { }
+// .hpslidetext{
+// 	font-family: Oswald;
+// 	text-transform: uppercase;
+// 	position:absolute;
+// 	font-size: 36px;
+// 	color: #026cb6;
+// 	font-weight: normal;
+// 	top: 0;
+// 	left: 0;
+// 	z-index: 1000;
+// 	text-shadow: 1px 1px 1px #fff;
+// 	line-height: 40px;
+// 	padding-top: 100px;
+// 	margin-left: 30px;
+// }
+
+
+#mini-header p{
+	font-family: Oswald;
+	color:#002743;
+	font-size: 24px;
+	text-shadow: 1px 1px 1px #fff;
+	text-transform: uppercase;
+	margin: 22px 0 0;
+}
+
+.hentry ul, .hentry ol {
+margin: 0 0 15px 0px;
+line-height: 1.5em;
+}
+.hentry ul {
+list-style: none;
+}
+.hentry ul li{
+	padding: 0 0 0 20px;
+	background: transparent url('../images/arrow.png') 0px 3px  no-repeat;
+}
+.widget-container  ul{
+	list-style: disc;
+	line-height: 1.5em;
+}
+
+.widget-container{
+	border: none;
+	background:#f1f1f1;
+	padding: 15px 20px;
+	font-size: 12px;
+}
+.widget-title{
+	color: #333333;
+	font-size: 12px;
+	border: none;
+}
+
+.footer_content{
+	border-top: 5px solid #ebebeb;
+	padding: 15px 0;
+}
+.espresso-footer-menu{
+	/*float: left;*/
+}
+.espresso-footer-menu li {
+	float: left;
+	padding-right: 5px;
+
+}
+.espresso-footer-menu a{
+	font-size: 85%;
+	color: #999999;
+	border-right: solid 1px #8f8f8f;
+	padding-right: 5px;
+
+}
+#site-info{
+	/*float: right;*/
+	padding: 5px 0 0;
+	color: #666666;
+}
+#site-info a {
+		color: #999999;
+}
+.sidebar_phone{
+	line-height: 1;
+	font-weight: bold;
+	padding-left: 20px;
+	background: transparent url('../images/phone_small.png') top left no-repeat;
+}
+.sidebar_email{
+	font-weight: bold;
+	padding-left: 20px;
+	background: transparent url('../images/email_small.png') top left no-repeat;
+}
+.sidebar_address{
+	line-height: 1;
+	font-weight: bold;
+	padding-left: 20px;
+	background: transparent url('../images/house.png') top left no-repeat;
+}
+
+.widget-container ul{
+	margin: 5px 0 5px 15px;
+}
+
+.sidebar1_inner{
+	line-height: 16px;
+}
+
+.mas_list h3  { cursor:pointer; }
+.mas_list h3.active  { color:#21759B; }
+.mas_list div { height:0; overflow:hidden; position:relative; }
+.mas_list div p  { padding:0; margin-bottom:15px; }
+.hp-industries {width:140px; font-size:11px;}
+.mas-date {color:#999;}
+.mas-event-list p {margin:0 0 10px 0; padding:0; line-height:1.2em;}
+
+/*---------Events---------------*/
+#tribe-events-footer .tribe-events-sub-nav li {background:none;padding:0}

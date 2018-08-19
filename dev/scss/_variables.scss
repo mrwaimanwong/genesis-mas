@@ -1,0 +1,24 @@
+/* ## Variables
+-----------------------------------------------*/
+
+@font-face {
+  font-family: 'Oswald';
+  src: url('../fonts/Oswald.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Oswald.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Oswald.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Oswald.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Oswald.svg#svgOswald') format('svg'); /* Legacy iOS */
+}
+$font-stack-secondary:    "Oswald", sans-serif;
+
+$color-primary: #026cb6;
+$color-primary-dark: darken(desaturate($color-primary, 20), 20);
+$color-primary-light: lighten(desaturate($color-primary, 5), 5);
+
+$color-secondary: #fec658;
+
+$color-gray-dark: #191c21;
+$color-gray-medium: #5a5a5a;
+$color-gray-light: #888;
+
+$shadow-primary: 1px 1px rgba(0, 0, 0, .75);
