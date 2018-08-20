@@ -25,9 +25,9 @@ function ww_custom_footer() {
 	echo
 	'<div class="site-footer">
 	<div class="wrap">
+	<div class="footer-copyright"><span id="email"><a href="mailto:info@materialace.com">info@materialace.com</a></span><span id="phone">(949) 623-8330</span></div>
 	'.$footernav.'
-	<div class="footer-copyright">©'.date('Y').' Material Acquisition Services&reg; and it\'s logo are registered trademarks and may not be used without express written consent. <a href="http://waimanwong.com">Web Design by Wai Man Wong</a> &nbsp;&nbsp;&nbsp;<a id="scroll-top-btn" title="Go to top"><i class="fa fa-arrow-circle-up"></i></a></div>
-
+	©'.date('Y').' Material Acquisition Services&reg; and it\'s logo are registered trademarks and may not be used without express written consent. <a href="http://waimanwong.com">Web Design by Wai Man Wong</a> &nbsp;&nbsp;&nbsp;<a id="scroll-top-btn" title="Go to top"><i class="fa fa-arrow-circle-up"></i></a>
 	</div>
 	</div>';
 }

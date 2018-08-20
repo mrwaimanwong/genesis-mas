@@ -9,6 +9,8 @@ function ww_remove_header() {
 	remove_action( 'genesis_header', 'genesis_header_markup_close', 15);
   //* Remove default Genesis menu
   remove_action('genesis_after_header', 'genesis_do_nav');
+
+  remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
 }
 
 /** Add custom header */
@@ -54,6 +56,22 @@ function ww_custom_header()
 				<h1 class="site-title" itemprop="headline"><a href="'.$url .'" title="'.$name.'">'.$name.'</a></h1>
 			</div>
 	 		'.$primarynav.'
-		</div>
-	</header>';
+		</div>';
+
+  if(!is_home() && !is_front_page()) {
+    $the_page_title = '';
+    $the_page_bg = 'mini';
+
+    if ( get_the_title() == '' )
+			{
+			$the_page_title = 'Events';
+			}
+      else {
+        $the_page_title = get_the_title();
+        $the_page_bg = get_the_title();
+      }
+    echo '<div class="ww-page-title"><div class="wrap"><div style="height: 75px; background: url(/wp-content/themes/genesis-mas/images/'.$the_page_bg.'_bg.jpg) no-repeat;"><h1>'.$the_page_title.'</h1></div></div></div>';
+  }
+
+	echo '</header>';
 }

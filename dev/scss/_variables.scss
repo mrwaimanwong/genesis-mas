@@ -9,7 +9,8 @@
        url('../fonts/Oswald.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/Oswald.svg#svgOswald') format('svg'); /* Legacy iOS */
 }
-$font-stack-secondary:    "Oswald", sans-serif;
+$font-stack-primary:    'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+$font-stack-secondary:    'Oswald', sans-serif;
 
 $color-primary: #026cb6;
 $color-primary-dark: darken(desaturate($color-primary, 20), 20);

@@ -16,7 +16,7 @@ plugins = require('gulp-load-plugins')({
 
 // console.log(plugins);
 
-gulp.task('browser-sync', ['css'], function() {
+gulp.task('browser-sync', ['css', 'js'], function() {
     plugins.browserSync.init({
         proxy: "http://materialace.test/",
         // host: 'stracherlaw.waimanwong.local',
@@ -79,7 +79,7 @@ gulp.task('watch', ['browser-sync'], function() {
   gulp.watch(folder.src + 'images/**/*', ['images']);
 
   // php changes
-  gulp.watch(folder.build + '!(node_modules)**/*.php').on('change', plugins.browserSync.reload);
+  gulp.watch(folder.build + '**/*.php').on('change', plugins.browserSync.reload);
 
   // javascript changes
   gulp.watch(folder.src + 'js/**/*', ['js']).on('change', plugins.browserSync.reload);
